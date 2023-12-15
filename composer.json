@@ -10,7 +10,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "nuwave/lighthouse": "^6.28"
+        "nuwave/lighthouse": "^6.28",
+        "socialiteproviders/google": "^4.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

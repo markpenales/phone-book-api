@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/auth/login', [\App\Http\Controllers\AuthController::class, 'redirect'])->name('login');
+Route::get('/auth/callback', [\App\Http\Controllers\AuthController::class, 'callback'])->name('callback');
+
+
