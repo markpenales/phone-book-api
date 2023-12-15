@@ -29,7 +29,7 @@
 `first` - Is a variable that will define how many data you want to show at a time
 
 `id, name, contact_no, created_at, updated_at` - is all the available data from the contact model, remove as needed
-```json
+```bash
 query {
   listContacts(first: 10) {
     data {
@@ -77,7 +77,7 @@ Reponse
 ### Viewing a Specific Contact
 - Replace 1 with the desired contact ID.
 
-```json
+```bash
 query {
   viewContact(id: 1) {
     id
@@ -106,7 +106,7 @@ Response:
 ```
 ### Creating a New Contact
 Modify the values for name and contact_no as needed.
-```json
+```bash
 mutation {
     createContact(name: "New Contact", contact_no: "987654321") {
     id
@@ -115,7 +115,7 @@ mutation {
     created_at
     updated_at
 }
-}
+
 
 ```
 
@@ -140,7 +140,7 @@ Replace 1 with the contact ID to update.
 
 Modify the values for name and contact_no as needed.
 
-```json
+```bash
 mutation {
   updateContact(id: 1, name: "Updated Contact", contact_no: "555555555") {
     id
@@ -171,7 +171,7 @@ Response
 
 Replace 1 with the contact ID to delete.
 
-```json
+```bash
 mutation {
   deleteContact(id: 1) {
     id
